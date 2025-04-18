@@ -3,7 +3,7 @@ import { GraduationCap, Brain, Palette, Users } from "lucide-react";
 
 export function Hero() {
   return (
-    <section className="min-h-screen pt-24 pb-16">
+    <section className="min-h-screen pt-24 pb-16 bg-gradient-to-b from-blue-50 to-white dark:from-background dark:to-background">
       <div className="container mx-auto px-4">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -30,29 +30,29 @@ export function Hero() {
           transition={{ duration: 0.5, delay: 0.2 }}
           className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mt-12"
         >
-          <div className="p-6 rounded-lg border bg-card hover:shadow-lg transition-shadow">
-            <Brain className="w-10 h-10 text-primary mb-4" />
+          <div className="p-6 rounded-lg border bg-white dark:bg-card hover:shadow-lg transition-all hover:border-primary/50 hover:bg-blue-50/50 dark:hover:bg-card">
+            <Brain className="w-10 h-10 text-blue-600 dark:text-primary mb-4" />
             <h3 className="font-semibold mb-2">Data Analytics</h3>
             <p className="text-sm text-muted-foreground">
               Skilled in data cleaning, visualization, and extracting actionable insights
             </p>
           </div>
-          <div className="p-6 rounded-lg border bg-card hover:shadow-lg transition-shadow">
-            <GraduationCap className="w-10 h-10 text-primary mb-4" />
+          <div className="p-6 rounded-lg border bg-white dark:bg-card hover:shadow-lg transition-all hover:border-primary/50 hover:bg-purple-50/50 dark:hover:bg-card">
+            <GraduationCap className="w-10 h-10 text-purple-600 dark:text-primary mb-4" />
             <h3 className="font-semibold mb-2">Education Design</h3>
             <p className="text-sm text-muted-foreground">
               Created 10+ outcome-focused courses, mentoring thousands
             </p>
           </div>
-          <div className="p-6 rounded-lg border bg-card hover:shadow-lg transition-shadow">
-            <Palette className="w-10 h-10 text-primary mb-4" />
+          <div className="p-6 rounded-lg border bg-white dark:bg-card hover:shadow-lg transition-all hover:border-primary/50 hover:bg-pink-50/50 dark:hover:bg-card">
+            <Palette className="w-10 h-10 text-pink-600 dark:text-primary mb-4" />
             <h3 className="font-semibold mb-2">Creative Strategy</h3>
             <p className="text-sm text-muted-foreground">
               Built 100+ visuals blending storytelling and strategy
             </p>
           </div>
-          <div className="p-6 rounded-lg border bg-card hover:shadow-lg transition-shadow">
-            <Users className="w-10 h-10 text-primary mb-4" />
+          <div className="p-6 rounded-lg border bg-white dark:bg-card hover:shadow-lg transition-all hover:border-primary/50 hover:bg-green-50/50 dark:hover:bg-card">
+            <Users className="w-10 h-10 text-green-600 dark:text-primary mb-4" />
             <h3 className="font-semibold mb-2">Leadership</h3>
             <p className="text-sm text-muted-foreground">
               Managed large events and led a 35-member team
