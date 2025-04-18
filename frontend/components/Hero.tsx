@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { GraduationCap, Brain, Palette, Users } from "lucide-react";
+import profileImage from "../assets/profile.jpg"; // Add your image to this path
 
 export function Hero() {
   return (
@@ -11,11 +12,30 @@ export function Hero() {
           transition={{ duration: 0.5 }}
           className="max-w-3xl mx-auto text-center"
         >
-          <img
-            src="/avatar.jpg"
-            alt="Aviral Pandey"
-            className="w-32 h-32 rounded-full mx-auto mb-6 border-4 border-primary/20"
-          />
+          <motion.div
+            initial={{ scale: 0.5, opacity: 0 }}
+            animate={{ scale: 1, opacity: 1 }}
+            transition={{ duration: 0.5 }}
+            className="relative w-32 h-32 mx-auto mb-6"
+          >
+            <img
+              src={profileImage}
+              alt="Aviral Pandey"
+              className="w-full h-full rounded-full object-cover border-4 border-primary/20 hover:border-primary/40 transition-colors duration-300 shadow-lg"
+            />
+            <motion.div
+              className="absolute inset-0 rounded-full border-4 border-primary/20"
+              animate={{
+                scale: [1, 1.05, 1],
+                opacity: [0.3, 0.1, 0.3],
+              }}
+              transition={{
+                duration: 2,
+                repeat: Infinity,
+                ease: "easeInOut",
+              }}
+            />
+          </motion.div>
           <h1 className="text-4xl font-bold mb-4">
             Hi, I'm <span className="text-primary">Aviral Pandey</span> 👋
           </h1>
