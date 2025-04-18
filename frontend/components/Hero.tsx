@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { GraduationCap, Brain, Palette, Users } from "lucide-react";
-import profileImage from "../assets/profile.jpg"; // Add your image to this path
+import profileImage from "@/assets/profile.jpg"; // Updated import path to use alias
 
 export function Hero() {
   return (
