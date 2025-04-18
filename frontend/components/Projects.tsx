@@ -8,8 +8,8 @@ const projects = [
     description: "Leveraging AI models to generate creative and contextually relevant responses, enhancing human-AI interaction through advanced prompt design techniques.",
     tags: ["AI", "NLP", "GPT", "Prompt Design"],
     links: {
-      github: "https://github.com/yourusername/prompt-engineering",
-      live: "https://prompt-engineering-demo.com"
+      github: "https://github.com/aviralpandey/prompt-engineering",
+      live: "#"
     }
   },
   {
@@ -17,7 +17,7 @@ const projects = [
     description: "Comprehensive digital marketing analysis project showcasing data-driven strategies that led to 50% increase in engagement metrics.",
     tags: ["Analytics", "Marketing", "Data Visualization", "Strategy"],
     links: {
-      github: "https://github.com/yourusername/marketing-analytics"
+      github: "https://github.com/aviralpandey/marketing-analytics"
     }
   },
   {
@@ -25,8 +25,8 @@ const projects = [
     description: "Platform reaching 8,000+ students with interactive learning materials and comprehensive course management system.",
     tags: ["Education", "Content Design", "User Experience"],
     links: {
-      github: "https://github.com/yourusername/edu-platform",
-      live: "https://edu-platform-demo.com"
+      github: "https://github.com/aviralpandey/edu-platform",
+      live: "#"
     }
   },
   {
@@ -34,7 +34,7 @@ const projects = [
     description: "Data analysis and visualization project for underprivileged student education programs, helping track and improve learning outcomes.",
     tags: ["Social Impact", "Data Analysis", "Education"],
     links: {
-      github: "https://github.com/yourusername/slum-swaraj"
+      github: "https://github.com/aviralpandey/slum-swaraj"
     }
   }
 ];
@@ -91,7 +91,7 @@ export function Projects() {
                       </a>
                     </Button>
                   )}
-                  {project.links.live && (
+                  {project.links.live && project.links.live !== "#" && (
                     <Button variant="ghost" size="sm" asChild>
                       <a 
                         href={project.links.live} 

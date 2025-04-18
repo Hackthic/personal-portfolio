@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { GraduationCap, Brain, Palette, Users } from "lucide-react";
-import profileImage from "@/assets/profile.jpg"; // Updated import path to use alias
 
+// Remove the direct image import since it's not available during build
 export function Hero() {
   return (
     <section className="min-h-screen pt-24 pb-16 bg-gradient-to-b from-blue-50 to-white dark:from-background dark:to-background">
@@ -18,8 +18,9 @@ export function Hero() {
             transition={{ duration: 0.5 }}
             className="relative w-32 h-32 mx-auto mb-6"
           >
+            {/* Replace with a URL to your hosted image */}
             <img
-              src={profileImage}
+              src="https://placehold.co/400x400"
               alt="Aviral Pandey"
               className="w-full h-full rounded-full object-cover border-4 border-primary/20 hover:border-primary/40 transition-colors duration-300 shadow-lg"
             />

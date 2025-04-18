@@ -8,15 +8,13 @@ export function Footer() {
         <div className="flex flex-col items-center justify-center space-y-4">
           <div className="flex space-x-4">
             <Button variant="ghost" size="icon" asChild>
-              <a href="mailto:aviralpandey575@gmail.com" target="_blank" rel="noopener noreferrer">
+              <a href="mailto:aviralpandey575@gmail.com" aria-label="Email">
                 <Mail className="h-5 w-5" />
-                <span className="sr-only">Email</span>
               </a>
             </Button>
             <Button variant="ghost" size="icon" asChild>
-              <a href="https://linkedin.com/in/yourprofile" target="_blank" rel="noopener noreferrer">
+              <a href="https://linkedin.com/in/aviralpandey" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
                 <Linkedin className="h-5 w-5" />
-                <span className="sr-only">LinkedIn</span>
               </a>
             </Button>
           </div>
